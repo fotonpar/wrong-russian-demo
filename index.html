@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Wrong Russian — 18+ Russian Swear Trainer</title>
+  <style>
+    :root{
+      --bg:#120913; --card:#211324; --card2:#2c1931; --text:#fff7fb; --muted:#c9aeca;
+      --hot:#ff4d8d; --acid:#c7ff4d; --yellow:#ffd166; --cyan:#57e2e5; --danger:#ff355e;
+      --shadow: 0 20px 70px rgba(0,0,0,.35); --radius:28px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 20% 0%,#4b154d 0,#120913 38%,#09050a 100%);color:var(--text);min-height:100svh;}
+    .app{width:min(520px,100%);margin:0 auto;min-height:100svh;padding:18px 14px 30px;position:relative;overflow:hidden;}
+    .blob{position:absolute;inset:auto -90px 120px auto;width:210px;height:210px;border-radius:50%;background:rgba(255,77,141,.18);filter:blur(12px);z-index:-1}
+    header{display:flex;align-items:center;gap:12px;margin:6px 2px 18px}.logo{width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,var(--hot),#8e44ff);display:grid;place-items:center;box-shadow:var(--shadow);font-size:26px;transform:rotate(-6deg)}
+    h1{margin:0;font-size:25px;letter-spacing:-.04em;line-height:.95}.tag{margin-top:5px;color:var(--muted);font-size:13px}.pill{margin-left:auto;background:rgba(255,53,94,.18);border:1px solid rgba(255,53,94,.5);color:#ffd8e0;padding:7px 10px;border-radius:999px;font-weight:800;font-size:12px}
+    .hero{background:linear-gradient(160deg,#331339,#201124);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);overflow:hidden;position:relative}.heroTop{display:flex;gap:13px;align-items:center}.mascot{flex:0 0 118px;height:118px;border-radius:26px;background:linear-gradient(180deg,#ff9ac1,#ff4d8d);position:relative;display:grid;place-items:center;box-shadow:inset 0 -16px 0 rgba(0,0,0,.12);animation:bounce 1.8s infinite ease-in-out}.mascot:before{content:"";width:62px;height:82px;border-radius:50% 50% 44% 44%;background:#ffe0ed;box-shadow:inset 0 0 0 8px rgba(255,77,141,.32);}.mascot:after{content:"🪨 🪨 🪨";position:absolute;bottom:5px;left:9px;font-size:17px;letter-spacing:-4px;filter:drop-shadow(0 2px 0 rgba(0,0,0,.2))}.eyes{position:absolute;top:37px;left:36px;font-size:16px;letter-spacing:19px}.road{position:absolute;right:-12px;bottom:-18px;font-size:72px;opacity:.16;transform:rotate(-14deg)}@keyframes bounce{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+    .hero h2{margin:0;font-size:22px;letter-spacing:-.04em}.hero p{margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.35}.cta{display:flex;gap:8px;margin-top:14px}.btn{border:0;border-radius:16px;padding:12px 14px;font-weight:900;color:#130915;background:var(--acid);box-shadow:0 10px 24px rgba(199,255,77,.18);cursor:pointer}.btn.secondary{background:rgba(255,255,255,.09);color:var(--text);border:1px solid rgba(255,255,255,.12);box-shadow:none}.search{width:100%;margin:16px 0 12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--text);padding:14px 16px;border-radius:18px;outline:none;font-size:16px}.tabs{display:flex;gap:8px;overflow:auto;padding-bottom:9px}.tab{white-space:nowrap;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.11);color:var(--muted);border-radius:999px;padding:9px 12px;font-weight:800;font-size:13px}.tab.active{background:var(--hot);color:white;border-color:transparent}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0 14px}.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:10px}.stat b{display:block;font-size:18px}.stat span{font-size:11px;color:var(--muted)}
+    .list{display:grid;gap:12px}.card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:15px;box-shadow:0 12px 34px rgba(0,0,0,.22)}.cardHead{display:flex;gap:10px;align-items:flex-start}.num{width:30px;height:30px;border-radius:11px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-weight:900;color:var(--yellow);font-size:12px;flex:0 0 auto}.phrase{font-size:22px;line-height:1.05;font-weight:950;letter-spacing:-.045em}.level{margin-left:auto;font-size:11px;font-weight:900;color:#130915;background:var(--yellow);border-radius:999px;padding:5px 8px;white-space:nowrap}.meta{display:grid;gap:8px;margin-top:13px}.row{background:rgba(255,255,255,.055);border-radius:15px;padding:10px}.label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:900;margin-bottom:3px}.value{font-size:14px;line-height:1.3}.actions{display:flex;gap:8px;margin-top:12px}.sound{flex:1}.tiny{font-size:12px;color:var(--muted);text-align:center;margin:14px 0 0}.funStrip{display:grid;grid-template-columns:1.2fr .8fr;gap:10px;margin:14px 0}.funBox{background:linear-gradient(145deg,rgba(87,226,229,.14),rgba(255,77,141,.13));border:1px solid rgba(255,255,255,.11);border-radius:20px;padding:12px;min-height:82px}.funBox b{display:block;font-size:13px;margin-bottom:6px;color:var(--acid)}.funBox span{font-size:13px;color:var(--text);line-height:1.25}.panic{font-size:28px;letter-spacing:-3px;margin-top:4px}.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);background:#fff;color:#160817;border-radius:999px;padding:11px 15px;font-weight:950;box-shadow:var(--shadow);transition:.28s;z-index:9}.toast.show{transform:translateX(-50%) translateY(0)}.footerNote{margin-top:16px;padding:12px;border-radius:18px;background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.25);font-size:12px;color:#ffe4a3;line-height:1.35}.hidden{display:none!important}@media (min-width:480px){.app{padding-inline:20px}.phrase{font-size:24px}.mascot{flex-basis:132px;height:132px}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <div class="blob"></div>
+    <header>
+      <div class="logo">💥</div><div><h1>Wrong Russian</h1><div class="tag">Learn Russian in a very wrong way · 18+ beta</div></div><div class="pill">18+</div>
+    </header>
+    <section class="hero">
+      <div class="road">〰️</div><div class="heroTop"><div class="mascot"><div class="eyes">👁️👁️</div></div><div><h2>Learn Russian in a very wrong way.</h2><p>A very wrong way to learn Russian: swear words, idioms, literal translations, real meanings, and audio.</p><p style="margin-top:6px;color:#ffe4a3">For English speakers brave enough to learn Russian in a very wrong way: Russian phrase → pronunciation → literal translation → what it actually means.</p><div class="cta"><button class="btn" id="randomBtn">Random phrase</button><button class="btn secondary" id="safeBtn">Soft mode</button></div></div></div>
+    </section>
+    <div class="funStrip"><div class="funBox"><b>Phrase of the day</b><span id="dailyJoke">If life gives you bumps, launch learning mode.</span></div><div class="funBox"><b>Swear-o-meter</b><div class="panic" id="meter">🤬🤬🤬</div></div></div><input id="search" class="search" placeholder="Search: nakhuy, pizda, collar…" />
+    <div class="tabs" id="tabs"><button class="tab active" data-cat="all">All</button><button class="tab" data-cat="classic">Classics</button><button class="tab" data-cat="idiom">Idioms</button><button class="tab" data-cat="insult">Go-away phrases</button><button class="tab" data-cat="absurd">Absurd gems</button></div>
+    <div class="stats"><div class="stat"><b id="count">100</b><span>phrases</span></div><div class="stat"><b>4</b><span>categories</span></div><div class="stat"><b>RU</b><span>voice</span></div></div>
+    <section class="list" id="list"></section>
+    <div class="footerNote">Adult demo. Translations are intentionally educational: literal meaning + real English equivalent + cultural context. Do not test these on your Russian mother-in-law 😄</div>
+  <div class="toast" id="toast">Copied, you linguistic raccoon 🦝</div>
+  </main>
+<script>
+const raw = [
+['Понеслась пизда по кочкам','poneslás pizdá po kóchkam','The cunt started bouncing over bumps','Things have gone wildly off the rails','idiom','hard'],
+['Пошёл нахуй','poshyól nákhuy','Go onto a dick','Fuck off','insult','hard'],
+['Хуй тебе за воротник','khuy tebé za vorótnik','A dick down your collar','You get absolutely nothing / screw you','absurd','hard'],
+['Ебать-копать','yebát-kopát','Fuck-dig','Holy shit / wow','classic','medium'],
+['Да ну нахуй','da nu nákhuy','Oh come on, to dick','No fucking way','classic','medium'],
+['Ни хуя себе','ni khuyá sebé','Not a dick to oneself','Holy shit / damn','classic','medium'],
+['Заебись','zayebís','Fuckingly good','Awesome / nice','classic','medium'],
+['Пиздец','pizdéts','Cunt-end','Disaster / holy shit','classic','hard'],
+['Вот это пиздец','vot éto pizdéts','This is a cunt-end','This is absolutely fucked','classic','hard'],
+['Хуйня какая-то','khuynya kakáya-to','Some dick-stuff','Some bullshit','classic','medium'],
+['Не неси хуйню','ne nesí khuynyú','Don’t carry dick-stuff','Don’t talk bullshit','classic','medium'],
+['Мне похуй','mne pókhuy','It is on-dick to me','I don’t give a fuck','classic','hard'],
+['Похуй пляшем','pókhuy plyáshem','Fuck it, we dance','Whatever, let’s roll','idiom','medium'],
+['Ебать мой лысый череп','yebát moy lýsyy chérep','Fuck my bald skull','Well, fuck me sideways','absurd','hard'],
+['Едрить-колотить','yedrít-kolotít','Whack and smash','Damn / holy moly','classic','soft'],
+['Хрен тебе','khren tebé','Horseradish to you','No way / you get nothing','classic','soft'],
+['Херня на постном масле','khernyá na póstnom másle','Dick-stuff in fasting oil','Complete nonsense','idiom','medium'],
+['Ебучий случай','yebúchiy slúchay','Fucking case','A damn situation','classic','medium'],
+['Разъебать в пух и прах','razyebát v pukh i prakh','Fuck apart into fluff and dust','Destroy completely','idiom','hard'],
+['Отъебись','otyebís','Fuck away','Leave me alone','insult','hard'],
+['Иди в жопу','idí v zhópu','Go into an ass','Go to hell','insult','medium'],
+['Жопа с ручкой','zhópa s rúchkoy','An ass with a handle','A ridiculous mess','absurd','medium'],
+['Жопа мира','zhópa míra','Ass of the world','Middle of nowhere','idiom','medium'],
+['Через жопу','chérez zhópu','Through the ass','Done badly / backwards','idiom','medium'],
+['Руки из жопы','rúki iz zhópy','Hands from the ass','Terrible with hands','idiom','medium'],
+['С какого хуя?','s kakóvo khuyá','From what dick?','Why the fuck?','classic','hard'],
+['Какого хуя?','kakóvo khuyá','What dick?','What the fuck?','classic','hard'],
+['Хуй его знает','khuy yevó znáyet','His dick knows','Who the hell knows','classic','medium'],
+['Хуй поймёшь','khuy poymyósh','A dick will understand','Impossible to understand','classic','medium'],
+['Доебался до столба','doyebálsya do stolbá','Fucked-attached to a pole','Nitpicked absurdly','idiom','hard'],
+['Не доёбывайся','ne doyóbyvaysya','Don’t fuck-attach yourself','Stop nitpicking','insult','hard'],
+['Проебали полимеры','proyebáli poliméry','We fucked away the polymers','We screwed everything up','idiom','hard'],
+['Всё просрали','vsyo prosráli','We shat everything away','We blew it all','classic','hard'],
+['Срали-мазали','sráli-mázali','Shat and smeared','Made a messy botch','absurd','hard'],
+['Говно вопрос','govnó voprós','Shit question','No problem / easy','idiom','medium'],
+['Говно случается','govnó slucháyetsya','Shit happens','Shit happens','classic','medium'],
+['Не гони','ne goní','Don’t drive','Stop bullshitting','classic','soft'],
+['Задолбал','zadólbal','You hammered me tired','You’re annoying as hell','classic','soft'],
+['Заебал','zayebál','You fucked me tired','You’re fucking annoying','insult','hard'],
+['Охуеть можно','okhuyét mózhno','One can become dickstruck','Unbelievable','classic','hard'],
+['Охуенно','okhuyénno','Dickstruckly','Fucking great','classic','hard'],
+['Хуёво','khuyóvo','Dick-ishly','Shitty / bad','classic','hard'],
+['Нахуячить','nakhuyáchit','To dick-smash a lot','Throw together / make a lot','classic','hard'],
+['Захуярить','zakhuyárit','To dick-blast','To make/do forcefully','classic','hard'],
+['Расхуярить','raskhuyárit','To dick-smash apart','Smash to pieces','classic','hard'],
+['Прихуел?','prikhuyél','Have you become dickstruck?','Are you out of your mind?','insult','hard'],
+['Охуел совсем?','okhuyél sovsém','Totally dickstruck?','Have you completely lost it?','insult','hard'],
+['Ебануться можно','yebánutsya mózhno','One could fuck oneself','This is insane','classic','hard'],
+['Ты ебанулся?','ty yebánulsya','Did you fuck yourself?','Are you crazy?','insult','hard'],
+['Ебать ты гений','yebát ty géniy','Fuck, you’re a genius','You absolute genius / idiot, context decides','absurd','hard'],
+['Крыша поехала','krýsha poyékhala','The roof drove away','Lost one’s mind','idiom','soft'],
+['Башню снесло','báshnyu snesló','The tower got blown off','Lost it completely','idiom','soft'],
+['Мозги ебут','mozgí yebút','They fuck the brains','They’re messing with my head','idiom','hard'],
+['Не еби мне мозги','ne yebí mne mozgí','Don’t fuck my brains','Don’t mess with my head','insult','hard'],
+['Ебучий театр','yebúchiy teátr','Fucking theater','What a ridiculous drama','absurd','medium'],
+['Цирк с конями','tsirk s konyámi','Circus with horses','Total clown show','idiom','soft'],
+['Пиздострадания','pizdostradániya','Cunt-sufferings','Pointless melodrama','absurd','hard'],
+['Хуеплётство','khuyeplótstvo','Dick-weaving','Bullshitting / nonsense-making','absurd','hard'],
+['Пиздобратия','pizdobrátiya','Cunt-brotherhood','A shady gang / bunch','absurd','hard'],
+['Ебучий компот','yebúchiy kompót','Fucking compote','A ridiculous mess','absurd','medium'],
+['Пизда рулю','pizdá rulyú','Cunt to the steering wheel','The steering/control is fucked','absurd','hard'],
+['Хуй на блюде','khuy na blyúde','A dick on a plate','A useless offer / insult gift','absurd','hard'],
+['Жопой чую','zhópoy chúyu','I sense it with my ass','I have a gut feeling','idiom','medium'],
+['Сидим в жопе','sidím v zhópe','We sit in the ass','We’re in deep trouble','idiom','medium'],
+['Вляпались по уши','vlyápalis po úshi','Got smeared up to ears','We’re in it deep','idiom','soft'],
+['Насрали в душу','nasráli v dúshu','Shat into the soul','Deeply betrayed / hurt','idiom','hard'],
+['Душнила ебаная','dushníla yebánaya','Fucking suffocator','Insufferable bore','insult','hard'],
+['Мудак','mudák','Ballbag','Asshole','insult','medium'],
+['Конченый мудак','kónchenyy mudák','Finished asshole','Total asshole','insult','hard'],
+['Долбоёб','dolboyób','Hammer-fucker','Fucking idiot','insult','hard'],
+['Еблан','yeblán','Fuckhead','Dumbass','insult','hard'],
+['Дебил, блядь','debíl blyád','Idiot, whore/fuck','Fucking idiot','insult','hard'],
+['Блядский цирк','blyádsky tsirk','Whorish circus','Fucking circus','classic','hard'],
+['Блядь, ну как так','blyád nu kak tak','Fuck, how so','Fuck, how is this possible','classic','medium'],
+['Твою мать','tvoyú mat','Your mother','Damn it','classic','medium'],
+['Мать твою за ногу','mat tvoyú za nógu','Your mother by the leg','Damn it all','absurd','medium'],
+['Ёбаный насос','yóbany nasós','Fucking pump','For fuck’s sake','absurd','hard'],
+['Ёкарный бабай','yókarnyy babáy','Yokarny bogeyman','Jeez / dang','classic','soft'],
+['Пиздюк мелкий','pizdyúk mélkiy','Little cuntling','Little brat','insult','hard'],
+['Сучий потрох','súchiy potrókh','Bitch innard','Bastard / nasty type','insult','medium'],
+['Сука ты крашеная','súka ty kráshenaya','You painted bitch','You fake bastard','insult','medium'],
+['Хрен моржовый','khren morzhóvyy','Walrus horseradish','Silly jerk','absurd','soft'],
+['Пень еловый','pen yelóvyy','Spruce stump','Blockhead','insult','soft'],
+['Иди лесом','idí lésom','Go by the forest','Get lost','insult','soft'],
+['Катись колбаской','katís kolbáskoy','Roll away like sausage','Go away, silly','absurd','soft'],
+['Отвали','otvalí','Fall off','Back off','insult','soft'],
+['Съебался отсюда','syebálsya otsyúda','Fucked off from here','Got the fuck out of here','insult','hard'],
+['Съеби в туман','syebí v tumán','Fuck off into fog','Disappear / get lost','insult','hard'],
+['Пшёл вон','pshyól von','Go out','Get out','insult','soft'],
+['Закрой хлебало','zakróy khlebálo','Close your bread-hole','Shut your mouth','insult','medium'],
+['Завали ебало','zavalí yebálo','Block your fuck-face','Shut the fuck up','insult','hard'],
+['Не пизди','ne pizdí','Don’t cunt-talk','Don’t lie / shut up','insult','hard'],
+['Пиздеть не мешки ворочать','pizdét ne meshkí vorochát','Talking shit isn’t moving sacks','Talk is cheap','idiom','hard'],
+['Хуй с горы','khuy s gorý','Dick from a mountain','Some random guy','idiom','medium'],
+['Пиздой накрылось','pizdóy nakrýlos','Covered by cunt','It went completely to hell','idiom','hard'],
+['Накрылось медным тазом','nakrýlos médnym tazóm','Covered by a copper basin','It failed / collapsed','idiom','soft'],
+['В рот мне ноги','v rot mne nógi','Feet into my mouth','What the actual hell','absurd','medium'],
+['Ебать мой рот наоборот','yebát moy rot naoborót','Fuck my mouth backwards','Absurd shocked swearing','absurd','hard'],
+['Хуйня из-под коня','khuynyá iz-pod konyá','Dick-stuff from under a horse','Utter rubbish','absurd','hard'],
+['Пизда на лыжах','pizdá na lýzhakh','Cunt on skis','Ridiculous person/situation','absurd','hard'],
+['Ебучие санки','yebúchiye sánki','Fucking sleds','Random angry exclamation','absurd','medium'],
+['Сраный стыд','srányy styd','Shitty shame','Embarrassing mess','classic','medium'],
+['Хуже некуда','khúzhe nékuda','Worse nowhere','Couldn’t be worse','classic','soft'],
+['Ни в пизду ни в Красную Армию','ni v pizdú ni v Krásnuyu Ármiyu','Neither into cunt nor Red Army','Totally useless / misfit','idiom','hard'],
+['Пиздец котёнку','pizdéts kotyónku','Cunt-end to the kitten','It’s over / doomed','absurd','hard']
+];
+const phrases = raw.map((r,i)=>({id:i+1,ru:r[0],tr:r[1],literal:r[2],meaning:r[3],cat:r[4],level:r[5]}));
+let currentCat='all', soft=false;
+const list=document.getElementById('list'), search=document.getElementById('search'), count=document.getElementById('count');
+function levelText(l){return l==='soft'?'soft':l==='medium'?'medium':'hard'}
+function filtered(){const q=search.value.trim().toLowerCase();return phrases.filter(p=>(currentCat==='all'||p.cat===currentCat)&&(!soft||p.level!=='hard')&&(!q||[p.ru,p.tr,p.literal,p.meaning].join(' ').toLowerCase().includes(q)))}
+function render(){const items=filtered();count.textContent=items.length;document.getElementById('meter').textContent=soft?'😇🧼✨': currentCat==='absurd'?'🦝💥🤹': currentCat==='insult'?'🤬🚨🔥':'🤬🤬🤬';list.innerHTML=items.map(p=>`<article class="card" id="p${p.id}"><div class="cardHead"><div class="num">${p.id}</div><div class="phrase">${p.ru}</div><div class="level">${levelText(p.level)}</div></div><div class="meta"><div class="row"><div class="label">Transcription</div><div class="value">${p.tr}</div></div><div class="row"><div class="label">Literal English</div><div class="value">${p.literal}</div></div><div class="row"><div class="label">Natural English / cultural meaning</div><div class="value">${p.meaning}</div></div></div><div class="actions"><button class="btn sound" onclick="speak('${encodeURIComponent(p.ru)}')">🔊 Play Russian audio</button><button class="btn secondary" onclick="copyPhrase('${encodeURIComponent(p.ru)}')">Copy</button></div></article>`).join('') || '<p class="tiny">Nothing found. Try another beautifully cursed word.</p>'}
+function speak(encoded){const text=decodeURIComponent(encoded); if(!('speechSynthesis' in window)){alert('Speech synthesis is not supported here'); return;} speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.lang='ru-RU'; u.rate=.82; u.pitch=.95; speechSynthesis.speak(u)}
+function copyPhrase(encoded){navigator.clipboard?.writeText(decodeURIComponent(encoded));const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1200)}
+const jokes=['If life gives you bumps, launch learning mode.','Today we learn Russian with soul, swearing, and a helmet.','Politeness class is cancelled; phonetics showed up drunk.','First transcription, then regret.','Russian profanity: learning the language from the most wrong side possible.'];document.getElementById('dailyJoke').textContent=jokes[new Date().getDate()%jokes.length];
+document.getElementById('tabs').addEventListener('click',e=>{if(!e.target.dataset.cat)return;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));e.target.classList.add('active');currentCat=e.target.dataset.cat;render()});
+search.addEventListener('input',render);document.getElementById('safeBtn').onclick=()=>{soft=!soft;document.getElementById('safeBtn').textContent=soft?'Chaos mode':'Soft mode';render()};document.getElementById('randomBtn').onclick=()=>{const items=filtered(); if(!items.length)return; const p=items[Math.floor(Math.random()*items.length)]; document.getElementById('p'+p.id)?.scrollIntoView({behavior:'smooth',block:'center'}); setTimeout(()=>speak(encodeURIComponent(p.ru)),450)};render();
+</script>
+</body>
+</html>
