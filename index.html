@@ -10,14 +10,14 @@
     .nav{position:fixed;z-index:10;top:0;left:0;right:0;display:flex;align-items:center;gap:12px;padding:14px 16px calc(10px + env(safe-area-inset-top));background:linear-gradient(#000,rgba(0,0,0,.72),transparent);pointer-events:none}
     .brand{font-weight:1000;letter-spacing:-.07em;font-size:23px;line-height:.9} .motto{font-size:11px;color:var(--muted);letter-spacing:.02em;margin-top:3px} .badge{margin-left:auto;border:2px solid #fff;border-radius:999px;padding:6px 9px;font-weight:1000;font-size:12px}
     .three{display:grid;gap:3px;transform:skew(-17deg)} .three i{display:block;width:9px;height:34px;background:#fff}
-    .hero,.card{min-height:100svh;scroll-snap-align:start;position:relative;padding:86px 18px 24px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:#000;border-bottom:1px solid #111}
+    .hero,.card{min-height:100svh;scroll-snap-align:start;position:relative;padding:78px 18px max(72px,calc(56px + env(safe-area-inset-bottom)));display:flex;flex-direction:column;justify-content:flex-start;gap:12px;overflow:hidden;background:#000;border-bottom:1px solid #111}
     .hero h1{font-size:clamp(58px,18vw,104px);line-height:.78;letter-spacing:-.095em;margin:0;text-transform:uppercase} .hero p{font-size:18px;line-height:1.25;color:#d8d8d8;max-width:390px} .hero .big{font-size:22px;color:#fff;font-weight:900} .heroArt{height:42vh;min-height:280px;border:2px solid #fff;border-radius:34px;display:grid;place-items:center;position:relative;overflow:hidden;background:#050505;box-shadow:inset 0 0 0 8px #000,inset 0 0 0 10px #fff} .heroArt:before{content:"";position:absolute;inset:-30px;background:repeating-linear-gradient(105deg,transparent 0 18px,#fff 19px 25px,transparent 26px 54px);opacity:.16} .heroArt b{font-size:88px;z-index:1;filter:grayscale(1)}
     .stripes{position:absolute;right:14px;top:86px;display:flex;gap:7px;transform:skew(-17deg);opacity:.95} .stripes i{width:17px;height:132px;background:#fff;display:block}
     .topline{display:flex;align-items:center;font-size:12px;font-weight:1000;letter-spacing:.12em;color:#aaa} .topline b{margin-left:auto;color:#000;background:#fff;border-radius:999px;padding:6px 9px;letter-spacing:0}
-    .visual{display:grid;place-items:center;margin-top:8px;flex:1;min-height:280px;border:2px solid #fff;border-radius:28px;background:radial-gradient(circle at 50% 35%,#171717,#000 62%);box-shadow:inset 0 0 0 8px #000,inset 0 0 0 10px #fff;position:relative;overflow:hidden}.visual:before{content:"WRONG • RUSSIAN • WRONG • RUSSIAN • WRONG • RUSSIAN";position:absolute;top:12px;left:18px;right:18px;text-align:center;font-family:Georgia,serif;font-weight:900;font-size:10px;letter-spacing:.22em;color:#fff;opacity:.62}.visual:after{content:"☠︎ ✦ ☠︎";position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:18px;color:#fff;opacity:.65} .art{width:min(88vw,405px);height:auto;filter:drop-shadow(0 20px 40px rgba(255,255,255,.08))}.art text{font-family:Impact,'Arial Black',sans-serif}.caption-ribbon{font-family:Georgia,serif;font-weight:900;letter-spacing:.08em}
-    .copy{padding-bottom:12px} .kicker{font-size:12px;text-transform:uppercase;color:#9b9b9b;font-weight:900;letter-spacing:.11em;margin-bottom:8px} h2{font-family:Impact,'Arial Black',Inter,sans-serif;font-size:clamp(40px,12vw,70px);line-height:.82;letter-spacing:-.055em;margin:0 72px 10px 0;text-transform:uppercase;text-shadow:2px 2px 0 #000,-1px -1px 0 #000} .transcription{font-size:18px;color:#ddd;font-weight:800;margin-bottom:14px}
-    .grid{display:grid;grid-template-columns:1fr;gap:8px} .grid div{border:1px solid #333;border-radius:18px;padding:12px;background:#070707} small{display:block;color:#888;font-size:10px;text-transform:uppercase;font-weight:1000;letter-spacing:.1em;margin-bottom:5px} p{margin:0;font-size:15px;line-height:1.25}
-    .play{width:100%;border:2px solid #fff;background:#fff;color:#000;border-radius:999px;padding:16px 18px;font-weight:1000;font-size:16px;box-shadow:0 0 0 0 #fff;transition:.15s;cursor:pointer} .play:active{transform:scale(.98)} .play.playing{background:#000;color:#fff;box-shadow:0 0 0 4px #fff inset}
+    .visual{display:grid;place-items:center;margin-top:8px;flex:0 1 38svh;min-height:235px;border:2px solid #fff;border-radius:28px;background:radial-gradient(circle at 50% 35%,#171717,#000 62%);box-shadow:inset 0 0 0 8px #000,inset 0 0 0 10px #fff;position:relative;overflow:hidden}.visual:before{content:"WRONG • RUSSIAN • WRONG • RUSSIAN • WRONG • RUSSIAN";position:absolute;top:12px;left:18px;right:18px;text-align:center;font-family:Georgia,serif;font-weight:900;font-size:10px;letter-spacing:.22em;color:#fff;opacity:.62}.visual:after{content:"☠︎ ✦ ☠︎";position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:18px;color:#fff;opacity:.65} .art{width:min(88vw,405px);height:auto;filter:drop-shadow(0 20px 40px rgba(255,255,255,.08))}.art text{font-family:Impact,'Arial Black',sans-serif}.caption-ribbon{font-family:Georgia,serif;font-weight:900;letter-spacing:.08em}
+    .copy{padding-bottom:12px;position:relative;z-index:2} .kicker{font-size:12px;text-transform:uppercase;color:#9b9b9b;font-weight:900;letter-spacing:.11em;margin-bottom:8px} h2{font-family:Impact,'Arial Black',Inter,sans-serif;font-size:clamp(34px,10.8vw,62px);line-height:.82;letter-spacing:-.055em;margin:0 72px 10px 0;text-transform:uppercase;text-shadow:2px 2px 0 #000,-1px -1px 0 #000} .transcription{font-size:16px;color:#ddd;font-weight:800;margin-bottom:10px}
+    .grid{display:grid;grid-template-columns:1fr;gap:7px} .grid div{border:1px solid #333;border-radius:18px;padding:12px;background:#070707} small{display:block;color:#888;font-size:10px;text-transform:uppercase;font-weight:1000;letter-spacing:.1em;margin-bottom:5px} p{margin:0;font-size:14px;line-height:1.22}
+    .play{width:100%;border:2px solid #fff;background:#fff;color:#000;border-radius:999px;padding:16px 18px;margin:12px 0 max(22px,env(safe-area-inset-bottom));font-weight:1000;font-size:16px;box-shadow:0 0 0 0 #fff;transition:.15s;cursor:pointer;position:relative;z-index:3;touch-action:manipulation;-webkit-tap-highlight-color:transparent} .play:active{transform:scale(.98)} .play.playing{background:#000;color:#fff;box-shadow:0 0 0 4px #fff inset}
     .hint{color:#aaa;font-size:13px;line-height:1.35} .footer{min-height:64svh;scroll-snap-align:start;display:grid;place-items:center;padding:28px;text-align:center;background:#000} .footer h2{margin:0;font-size:56px} .toast{position:fixed;z-index:20;left:50%;bottom:18px;transform:translateX(-50%) translateY(90px);background:#fff;color:#000;border-radius:999px;padding:12px 16px;font-weight:1000;transition:.25s;white-space:nowrap} .toast.show{transform:translateX(-50%) translateY(0)}
     @media(min-width:700px){.hero,.card{width:min(520px,100%);margin:0 auto;border-left:1px solid #111;border-right:1px solid #111}}
   </style>
@@ -2433,17 +2433,24 @@
   <section class="footer"><div><h2>Вот и всё.</h2><p class="hint">End of demo. You are now legally more dangerous in Russian.</p></div></section>
   <div class="toast" id="toast">Playing Russian chaos…</div>
 <script>
-let currentAudio=null;
+const player=document.createElement('audio');
+player.preload='auto'; player.setAttribute('playsinline',''); document.body.appendChild(player);
+let currentBtn=null;
 function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1400)}
-document.addEventListener('click', async (e)=>{
+document.addEventListener('pointerup', async (e)=>{
   const btn=e.target.closest('.play'); if(!btn) return;
+  e.preventDefault();
   try{
-    if(currentAudio){currentAudio.pause(); currentAudio.currentTime=0; document.querySelectorAll('.play.playing').forEach(b=>b.classList.remove('playing'));}
-    const audio=new Audio(btn.dataset.audio); currentAudio=audio; btn.classList.add('playing'); toast('Playing pronunciation…');
-    audio.onended=()=>btn.classList.remove('playing'); audio.onerror=()=>{btn.classList.remove('playing'); toast('Audio failed. Trying browser voice…'); fallbackSpeak(btn.dataset.text)};
-    await audio.play();
+    if(currentBtn) currentBtn.classList.remove('playing');
+    player.pause(); player.currentTime=0;
+    currentBtn=btn; btn.classList.add('playing');
+    player.src=btn.dataset.audio;
+    player.onended=()=>btn.classList.remove('playing');
+    player.onerror=()=>{btn.classList.remove('playing'); toast('Audio failed. Trying browser voice…'); fallbackSpeak(btn.dataset.text)};
+    toast('Playing pronunciation…');
+    await player.play();
   }catch(err){btn.classList.remove('playing'); fallbackSpeak(btn.dataset.text);}
-});
+}, {passive:false});
 function fallbackSpeak(text){
   if(!('speechSynthesis' in window)){toast('Audio not supported in this browser');return;}
   speechSynthesis.cancel(); speechSynthesis.resume();
