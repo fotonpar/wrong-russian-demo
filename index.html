@@ -15,9 +15,9 @@
     .stripes{position:absolute;right:14px;top:86px;display:flex;gap:7px;transform:skew(-17deg);opacity:.95} .stripes i{width:17px;height:132px;background:#fff;display:block}
     .topline{display:flex;align-items:center;font-size:12px;font-weight:1000;letter-spacing:.12em;color:#aaa} .topline b{margin-left:auto;color:#000;background:#fff;border-radius:999px;padding:6px 9px;letter-spacing:0}
     .visual{display:grid;place-items:center;margin-top:8px;flex:0 1 38svh;min-height:235px;border:2px solid #fff;border-radius:28px;background:radial-gradient(circle at 50% 35%,#171717,#000 62%);box-shadow:inset 0 0 0 8px #000,inset 0 0 0 10px #fff;position:relative;overflow:hidden}.visual:before{content:"WRONG • RUSSIAN • WRONG • RUSSIAN • WRONG • RUSSIAN";position:absolute;top:12px;left:18px;right:18px;text-align:center;font-family:Georgia,serif;font-weight:900;font-size:10px;letter-spacing:.22em;color:#fff;opacity:.62}.visual:after{content:"☠︎ ✦ ☠︎";position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:18px;color:#fff;opacity:.65} .art{width:min(88vw,405px);height:auto;filter:drop-shadow(0 20px 40px rgba(255,255,255,.08))}.art text{font-family:Impact,'Arial Black',sans-serif}.caption-ribbon{font-family:Georgia,serif;font-weight:900;letter-spacing:.08em}
-    .copy{padding-bottom:12px;position:relative;z-index:2} .kicker{font-size:12px;text-transform:uppercase;color:#9b9b9b;font-weight:900;letter-spacing:.11em;margin-bottom:8px} h2{font-family:Impact,'Arial Black',Inter,sans-serif;font-size:clamp(34px,10.8vw,62px);line-height:.82;letter-spacing:-.055em;margin:0 72px 10px 0;text-transform:uppercase;text-shadow:2px 2px 0 #000,-1px -1px 0 #000} .transcription{font-size:16px;color:#ddd;font-weight:800;margin-bottom:10px}
+    .copy{padding-bottom:12px;position:relative;z-index:2} .kicker{font-size:12px;text-transform:uppercase;color:#9b9b9b;font-weight:900;letter-spacing:.11em;margin-bottom:8px} .phraseRow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;margin-bottom:10px}h2{font-family:Impact,'Arial Black',Inter,sans-serif;font-size:clamp(34px,10.8vw,62px);line-height:.82;letter-spacing:-.055em;margin:0;text-transform:uppercase;text-shadow:2px 2px 0 #000,-1px -1px 0 #000} .transcription{font-size:16px;color:#ddd;font-weight:800;margin-bottom:10px}
     .grid{display:grid;grid-template-columns:1fr;gap:7px} .grid div{border:1px solid #333;border-radius:18px;padding:12px;background:#070707} small{display:block;color:#888;font-size:10px;text-transform:uppercase;font-weight:1000;letter-spacing:.1em;margin-bottom:5px} p{margin:0;font-size:14px;line-height:1.22}
-    .play{width:100%;border:2px solid #fff;background:#fff;color:#000;border-radius:999px;padding:16px 18px;margin:12px 0 max(22px,env(safe-area-inset-bottom));font-weight:1000;font-size:16px;box-shadow:0 0 0 0 #fff;transition:.15s;cursor:pointer;position:relative;z-index:3;touch-action:manipulation;-webkit-tap-highlight-color:transparent} .play:active{transform:scale(.98)} .play.playing{background:#000;color:#fff;box-shadow:0 0 0 4px #fff inset}
+    .play{width:58px;height:58px;min-width:58px;border:2px solid #fff;background:#fff;color:#000;border-radius:999px;padding:0;margin:0;font-weight:1000;font-size:0;line-height:1;display:grid;place-items:center;box-shadow:0 0 0 0 #fff;transition:.15s;cursor:pointer;position:sticky;top:88px;z-index:3;touch-action:manipulation;-webkit-tap-highlight-color:transparent}.play::before{content:'🔊';font-size:25px;filter:grayscale(1) contrast(2)}.play::after{content:'PLAY';position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.12em;color:#fff;font-family:Inter,Arial,sans-serif} .play:active{transform:scale(.98)} .play.playing{background:#000;color:#fff;box-shadow:0 0 0 4px #fff inset}.play.playing::before{content:'▮▮';font-size:18px;color:#fff}.play.playing::after{content:'ON'}
     .hint{color:#aaa;font-size:13px;line-height:1.35} .footer{min-height:64svh;scroll-snap-align:start;display:grid;place-items:center;padding:28px;text-align:center;background:#000} .footer h2{margin:0;font-size:56px} .toast{position:fixed;z-index:20;left:50%;bottom:18px;transform:translateX(-50%) translateY(90px);background:#fff;color:#000;border-radius:999px;padding:12px 16px;font-weight:1000;transition:.25s;white-space:nowrap} .toast.show{transform:translateX(-50%) translateY(0)}
     @media(min-width:700px){.hero,.card{width:min(520px,100%);margin:0 auto;border-left:1px solid #111;border-right:1px solid #111}}
   </style>
@@ -45,14 +45,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 001 · idiom · hard</div>
-        <h2>Понеслась пизда по кочкам</h2>
+        <div class="phraseRow"><h2>Понеслась пизда по кочкам</h2><button class="play" data-audio="assets/audio/001.mp3" data-text="Понеслась пизда по кочкам" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/poneslás pizdá po kóchkam/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>The cunt started bouncing over bumps</p></div>
           <div><small>Natural English</small><p>Things have gone wildly off the rails</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/001.mp3" data-text="Понеслась пизда по кочкам">▶ Play pronunciation</button>
     </section><section class="card" id="card-002" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -69,14 +68,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 002 · insult · hard</div>
-        <h2>Пошёл нахуй</h2>
+        <div class="phraseRow"><h2>Пошёл нахуй</h2><button class="play" data-audio="assets/audio/002.mp3" data-text="Пошёл нахуй" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/poshyól nákhuy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Go onto a dick</p></div>
           <div><small>Natural English</small><p>Fuck off</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/002.mp3" data-text="Пошёл нахуй">▶ Play pronunciation</button>
     </section><section class="card" id="card-003" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -93,14 +91,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 003 · absurd · hard</div>
-        <h2>Хуй тебе за воротник</h2>
+        <div class="phraseRow"><h2>Хуй тебе за воротник</h2><button class="play" data-audio="assets/audio/003.mp3" data-text="Хуй тебе за воротник" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuy tebé za vorótnik/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>A dick down your collar</p></div>
           <div><small>Natural English</small><p>You get absolutely nothing / screw you</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/003.mp3" data-text="Хуй тебе за воротник">▶ Play pronunciation</button>
     </section><section class="card" id="card-004" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -117,14 +114,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 004 · classic · medium</div>
-        <h2>Ебать-копать</h2>
+        <div class="phraseRow"><h2>Ебать-копать</h2><button class="play" data-audio="assets/audio/004.mp3" data-text="Ебать-копать" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebát-kopát/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck-dig</p></div>
           <div><small>Natural English</small><p>Holy shit / wow</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/004.mp3" data-text="Ебать-копать">▶ Play pronunciation</button>
     </section><section class="card" id="card-005" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -141,14 +137,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 005 · classic · medium</div>
-        <h2>Да ну нахуй</h2>
+        <div class="phraseRow"><h2>Да ну нахуй</h2><button class="play" data-audio="assets/audio/005.mp3" data-text="Да ну нахуй" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/da nu nákhuy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Oh come on, to dick</p></div>
           <div><small>Natural English</small><p>No fucking way</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/005.mp3" data-text="Да ну нахуй">▶ Play pronunciation</button>
     </section><section class="card" id="card-006" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -165,14 +160,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 006 · classic · medium</div>
-        <h2>Ни хуя себе</h2>
+        <div class="phraseRow"><h2>Ни хуя себе</h2><button class="play" data-audio="assets/audio/006.mp3" data-text="Ни хуя себе" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ni khuyá sebé/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Not a dick to oneself</p></div>
           <div><small>Natural English</small><p>Holy shit / damn</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/006.mp3" data-text="Ни хуя себе">▶ Play pronunciation</button>
     </section><section class="card" id="card-007" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -189,14 +183,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 007 · classic · medium</div>
-        <h2>Заебись</h2>
+        <div class="phraseRow"><h2>Заебись</h2><button class="play" data-audio="assets/audio/007.mp3" data-text="Заебись" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zayebís/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuckingly good</p></div>
           <div><small>Natural English</small><p>Awesome / nice</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/007.mp3" data-text="Заебись">▶ Play pronunciation</button>
     </section><section class="card" id="card-008" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -213,14 +206,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 008 · classic · hard</div>
-        <h2>Пиздец</h2>
+        <div class="phraseRow"><h2>Пиздец</h2><button class="play" data-audio="assets/audio/008.mp3" data-text="Пиздец" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdéts/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Cunt-end</p></div>
           <div><small>Natural English</small><p>Disaster / holy shit</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/008.mp3" data-text="Пиздец">▶ Play pronunciation</button>
     </section><section class="card" id="card-009" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -237,14 +229,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 009 · classic · hard</div>
-        <h2>Вот это пиздец</h2>
+        <div class="phraseRow"><h2>Вот это пиздец</h2><button class="play" data-audio="assets/audio/009.mp3" data-text="Вот это пиздец" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/vot éto pizdéts/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>This is a cunt-end</p></div>
           <div><small>Natural English</small><p>This is absolutely fucked</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/009.mp3" data-text="Вот это пиздец">▶ Play pronunciation</button>
     </section><section class="card" id="card-010" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -261,14 +252,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 010 · classic · medium</div>
-        <h2>Хуйня какая-то</h2>
+        <div class="phraseRow"><h2>Хуйня какая-то</h2><button class="play" data-audio="assets/audio/010.mp3" data-text="Хуйня какая-то" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuynya kakáya-to/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Some dick-stuff</p></div>
           <div><small>Natural English</small><p>Some bullshit</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/010.mp3" data-text="Хуйня какая-то">▶ Play pronunciation</button>
     </section><section class="card" id="card-011" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -285,14 +275,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 011 · classic · medium</div>
-        <h2>Не неси хуйню</h2>
+        <div class="phraseRow"><h2>Не неси хуйню</h2><button class="play" data-audio="assets/audio/011.mp3" data-text="Не неси хуйню" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ne nesí khuynyú/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Don’t carry dick-stuff</p></div>
           <div><small>Natural English</small><p>Don’t talk bullshit</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/011.mp3" data-text="Не неси хуйню">▶ Play pronunciation</button>
     </section><section class="card" id="card-012" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -309,14 +298,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 012 · classic · hard</div>
-        <h2>Мне похуй</h2>
+        <div class="phraseRow"><h2>Мне похуй</h2><button class="play" data-audio="assets/audio/012.mp3" data-text="Мне похуй" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/mne pókhuy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>It is on-dick to me</p></div>
           <div><small>Natural English</small><p>I don’t give a fuck</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/012.mp3" data-text="Мне похуй">▶ Play pronunciation</button>
     </section><section class="card" id="card-013" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -333,14 +321,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 013 · idiom · medium</div>
-        <h2>Похуй пляшем</h2>
+        <div class="phraseRow"><h2>Похуй пляшем</h2><button class="play" data-audio="assets/audio/013.mp3" data-text="Похуй пляшем" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pókhuy plyáshem/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck it, we dance</p></div>
           <div><small>Natural English</small><p>Whatever, let’s roll</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/013.mp3" data-text="Похуй пляшем">▶ Play pronunciation</button>
     </section><section class="card" id="card-014" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -357,14 +344,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 014 · absurd · hard</div>
-        <h2>Ебать мой лысый череп</h2>
+        <div class="phraseRow"><h2>Ебать мой лысый череп</h2><button class="play" data-audio="assets/audio/014.mp3" data-text="Ебать мой лысый череп" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebát moy lýsyy chérep/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck my bald skull</p></div>
           <div><small>Natural English</small><p>Well, fuck me sideways</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/014.mp3" data-text="Ебать мой лысый череп">▶ Play pronunciation</button>
     </section><section class="card" id="card-015" data-cat="classic" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -381,14 +367,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 015 · classic · soft</div>
-        <h2>Едрить-колотить</h2>
+        <div class="phraseRow"><h2>Едрить-колотить</h2><button class="play" data-audio="assets/audio/015.mp3" data-text="Едрить-колотить" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yedrít-kolotít/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Whack and smash</p></div>
           <div><small>Natural English</small><p>Damn / holy moly</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/015.mp3" data-text="Едрить-колотить">▶ Play pronunciation</button>
     </section><section class="card" id="card-016" data-cat="classic" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -405,14 +390,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 016 · classic · soft</div>
-        <h2>Хрен тебе</h2>
+        <div class="phraseRow"><h2>Хрен тебе</h2><button class="play" data-audio="assets/audio/016.mp3" data-text="Хрен тебе" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khren tebé/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Horseradish to you</p></div>
           <div><small>Natural English</small><p>No way / you get nothing</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/016.mp3" data-text="Хрен тебе">▶ Play pronunciation</button>
     </section><section class="card" id="card-017" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -429,14 +413,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 017 · idiom · medium</div>
-        <h2>Херня на постном масле</h2>
+        <div class="phraseRow"><h2>Херня на постном масле</h2><button class="play" data-audio="assets/audio/017.mp3" data-text="Херня на постном масле" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khernyá na póstnom másle/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Dick-stuff in fasting oil</p></div>
           <div><small>Natural English</small><p>Complete nonsense</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/017.mp3" data-text="Херня на постном масле">▶ Play pronunciation</button>
     </section><section class="card" id="card-018" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -453,14 +436,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 018 · classic · medium</div>
-        <h2>Ебучий случай</h2>
+        <div class="phraseRow"><h2>Ебучий случай</h2><button class="play" data-audio="assets/audio/018.mp3" data-text="Ебучий случай" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebúchiy slúchay/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucking case</p></div>
           <div><small>Natural English</small><p>A damn situation</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/018.mp3" data-text="Ебучий случай">▶ Play pronunciation</button>
     </section><section class="card" id="card-019" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -477,14 +459,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 019 · idiom · hard</div>
-        <h2>Разъебать в пух и прах</h2>
+        <div class="phraseRow"><h2>Разъебать в пух и прах</h2><button class="play" data-audio="assets/audio/019.mp3" data-text="Разъебать в пух и прах" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/razyebát v pukh i prakh/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck apart into fluff and dust</p></div>
           <div><small>Natural English</small><p>Destroy completely</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/019.mp3" data-text="Разъебать в пух и прах">▶ Play pronunciation</button>
     </section><section class="card" id="card-020" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -501,14 +482,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 020 · insult · hard</div>
-        <h2>Отъебись</h2>
+        <div class="phraseRow"><h2>Отъебись</h2><button class="play" data-audio="assets/audio/020.mp3" data-text="Отъебись" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/otyebís/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck away</p></div>
           <div><small>Natural English</small><p>Leave me alone</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/020.mp3" data-text="Отъебись">▶ Play pronunciation</button>
     </section><section class="card" id="card-021" data-cat="insult" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -525,14 +505,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 021 · insult · medium</div>
-        <h2>Иди в жопу</h2>
+        <div class="phraseRow"><h2>Иди в жопу</h2><button class="play" data-audio="assets/audio/021.mp3" data-text="Иди в жопу" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/idí v zhópu/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Go into an ass</p></div>
           <div><small>Natural English</small><p>Go to hell</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/021.mp3" data-text="Иди в жопу">▶ Play pronunciation</button>
     </section><section class="card" id="card-022" data-cat="absurd" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -549,14 +528,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 022 · absurd · medium</div>
-        <h2>Жопа с ручкой</h2>
+        <div class="phraseRow"><h2>Жопа с ручкой</h2><button class="play" data-audio="assets/audio/022.mp3" data-text="Жопа с ручкой" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zhópa s rúchkoy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>An ass with a handle</p></div>
           <div><small>Natural English</small><p>A ridiculous mess</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/022.mp3" data-text="Жопа с ручкой">▶ Play pronunciation</button>
     </section><section class="card" id="card-023" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -573,14 +551,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 023 · idiom · medium</div>
-        <h2>Жопа мира</h2>
+        <div class="phraseRow"><h2>Жопа мира</h2><button class="play" data-audio="assets/audio/023.mp3" data-text="Жопа мира" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zhópa míra/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Ass of the world</p></div>
           <div><small>Natural English</small><p>Middle of nowhere</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/023.mp3" data-text="Жопа мира">▶ Play pronunciation</button>
     </section><section class="card" id="card-024" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -597,14 +574,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 024 · idiom · medium</div>
-        <h2>Через жопу</h2>
+        <div class="phraseRow"><h2>Через жопу</h2><button class="play" data-audio="assets/audio/024.mp3" data-text="Через жопу" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/chérez zhópu/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Through the ass</p></div>
           <div><small>Natural English</small><p>Done badly / backwards</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/024.mp3" data-text="Через жопу">▶ Play pronunciation</button>
     </section><section class="card" id="card-025" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -621,14 +597,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 025 · idiom · medium</div>
-        <h2>Руки из жопы</h2>
+        <div class="phraseRow"><h2>Руки из жопы</h2><button class="play" data-audio="assets/audio/025.mp3" data-text="Руки из жопы" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/rúki iz zhópy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Hands from the ass</p></div>
           <div><small>Natural English</small><p>Terrible with hands</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/025.mp3" data-text="Руки из жопы">▶ Play pronunciation</button>
     </section><section class="card" id="card-026" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -645,14 +620,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 026 · classic · hard</div>
-        <h2>С какого хуя?</h2>
+        <div class="phraseRow"><h2>С какого хуя?</h2><button class="play" data-audio="assets/audio/026.mp3" data-text="С какого хуя?" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/s kakóvo khuyá/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>From what dick?</p></div>
           <div><small>Natural English</small><p>Why the fuck?</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/026.mp3" data-text="С какого хуя?">▶ Play pronunciation</button>
     </section><section class="card" id="card-027" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -669,14 +643,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 027 · classic · hard</div>
-        <h2>Какого хуя?</h2>
+        <div class="phraseRow"><h2>Какого хуя?</h2><button class="play" data-audio="assets/audio/027.mp3" data-text="Какого хуя?" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/kakóvo khuyá/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>What dick?</p></div>
           <div><small>Natural English</small><p>What the fuck?</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/027.mp3" data-text="Какого хуя?">▶ Play pronunciation</button>
     </section><section class="card" id="card-028" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -693,14 +666,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 028 · classic · medium</div>
-        <h2>Хуй его знает</h2>
+        <div class="phraseRow"><h2>Хуй его знает</h2><button class="play" data-audio="assets/audio/028.mp3" data-text="Хуй его знает" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuy yevó znáyet/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>His dick knows</p></div>
           <div><small>Natural English</small><p>Who the hell knows</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/028.mp3" data-text="Хуй его знает">▶ Play pronunciation</button>
     </section><section class="card" id="card-029" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -717,14 +689,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 029 · classic · medium</div>
-        <h2>Хуй поймёшь</h2>
+        <div class="phraseRow"><h2>Хуй поймёшь</h2><button class="play" data-audio="assets/audio/029.mp3" data-text="Хуй поймёшь" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuy poymyósh/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>A dick will understand</p></div>
           <div><small>Natural English</small><p>Impossible to understand</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/029.mp3" data-text="Хуй поймёшь">▶ Play pronunciation</button>
     </section><section class="card" id="card-030" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -741,14 +712,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 030 · idiom · hard</div>
-        <h2>Доебался до столба</h2>
+        <div class="phraseRow"><h2>Доебался до столба</h2><button class="play" data-audio="assets/audio/030.mp3" data-text="Доебался до столба" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/doyebálsya do stolbá/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucked-attached to a pole</p></div>
           <div><small>Natural English</small><p>Nitpicked absurdly</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/030.mp3" data-text="Доебался до столба">▶ Play pronunciation</button>
     </section><section class="card" id="card-031" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -765,14 +735,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 031 · insult · hard</div>
-        <h2>Не доёбывайся</h2>
+        <div class="phraseRow"><h2>Не доёбывайся</h2><button class="play" data-audio="assets/audio/031.mp3" data-text="Не доёбывайся" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ne doyóbyvaysya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Don’t fuck-attach yourself</p></div>
           <div><small>Natural English</small><p>Stop nitpicking</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/031.mp3" data-text="Не доёбывайся">▶ Play pronunciation</button>
     </section><section class="card" id="card-032" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -789,14 +758,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 032 · idiom · hard</div>
-        <h2>Проебали полимеры</h2>
+        <div class="phraseRow"><h2>Проебали полимеры</h2><button class="play" data-audio="assets/audio/032.mp3" data-text="Проебали полимеры" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/proyebáli poliméry/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>We fucked away the polymers</p></div>
           <div><small>Natural English</small><p>We screwed everything up</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/032.mp3" data-text="Проебали полимеры">▶ Play pronunciation</button>
     </section><section class="card" id="card-033" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -813,14 +781,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 033 · classic · hard</div>
-        <h2>Всё просрали</h2>
+        <div class="phraseRow"><h2>Всё просрали</h2><button class="play" data-audio="assets/audio/033.mp3" data-text="Всё просрали" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/vsyo prosráli/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>We shat everything away</p></div>
           <div><small>Natural English</small><p>We blew it all</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/033.mp3" data-text="Всё просрали">▶ Play pronunciation</button>
     </section><section class="card" id="card-034" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -837,14 +804,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 034 · absurd · hard</div>
-        <h2>Срали-мазали</h2>
+        <div class="phraseRow"><h2>Срали-мазали</h2><button class="play" data-audio="assets/audio/034.mp3" data-text="Срали-мазали" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/sráli-mázali/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Shat and smeared</p></div>
           <div><small>Natural English</small><p>Made a messy botch</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/034.mp3" data-text="Срали-мазали">▶ Play pronunciation</button>
     </section><section class="card" id="card-035" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -861,14 +827,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 035 · idiom · medium</div>
-        <h2>Говно вопрос</h2>
+        <div class="phraseRow"><h2>Говно вопрос</h2><button class="play" data-audio="assets/audio/035.mp3" data-text="Говно вопрос" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/govnó voprós/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Shit question</p></div>
           <div><small>Natural English</small><p>No problem / easy</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/035.mp3" data-text="Говно вопрос">▶ Play pronunciation</button>
     </section><section class="card" id="card-036" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -885,14 +850,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 036 · classic · medium</div>
-        <h2>Говно случается</h2>
+        <div class="phraseRow"><h2>Говно случается</h2><button class="play" data-audio="assets/audio/036.mp3" data-text="Говно случается" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/govnó slucháyetsya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Shit happens</p></div>
           <div><small>Natural English</small><p>Shit happens</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/036.mp3" data-text="Говно случается">▶ Play pronunciation</button>
     </section><section class="card" id="card-037" data-cat="classic" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -909,14 +873,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 037 · classic · soft</div>
-        <h2>Не гони</h2>
+        <div class="phraseRow"><h2>Не гони</h2><button class="play" data-audio="assets/audio/037.mp3" data-text="Не гони" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ne goní/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Don’t drive</p></div>
           <div><small>Natural English</small><p>Stop bullshitting</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/037.mp3" data-text="Не гони">▶ Play pronunciation</button>
     </section><section class="card" id="card-038" data-cat="classic" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -933,14 +896,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 038 · classic · soft</div>
-        <h2>Задолбал</h2>
+        <div class="phraseRow"><h2>Задолбал</h2><button class="play" data-audio="assets/audio/038.mp3" data-text="Задолбал" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zadólbal/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>You hammered me tired</p></div>
           <div><small>Natural English</small><p>You’re annoying as hell</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/038.mp3" data-text="Задолбал">▶ Play pronunciation</button>
     </section><section class="card" id="card-039" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -957,14 +919,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 039 · insult · hard</div>
-        <h2>Заебал</h2>
+        <div class="phraseRow"><h2>Заебал</h2><button class="play" data-audio="assets/audio/039.mp3" data-text="Заебал" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zayebál/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>You fucked me tired</p></div>
           <div><small>Natural English</small><p>You’re fucking annoying</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/039.mp3" data-text="Заебал">▶ Play pronunciation</button>
     </section><section class="card" id="card-040" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -981,14 +942,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 040 · classic · hard</div>
-        <h2>Охуеть можно</h2>
+        <div class="phraseRow"><h2>Охуеть можно</h2><button class="play" data-audio="assets/audio/040.mp3" data-text="Охуеть можно" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/okhuyét mózhno/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>One can become dickstruck</p></div>
           <div><small>Natural English</small><p>Unbelievable</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/040.mp3" data-text="Охуеть можно">▶ Play pronunciation</button>
     </section><section class="card" id="card-041" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1005,14 +965,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 041 · classic · hard</div>
-        <h2>Охуенно</h2>
+        <div class="phraseRow"><h2>Охуенно</h2><button class="play" data-audio="assets/audio/041.mp3" data-text="Охуенно" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/okhuyénno/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Dickstruckly</p></div>
           <div><small>Natural English</small><p>Fucking great</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/041.mp3" data-text="Охуенно">▶ Play pronunciation</button>
     </section><section class="card" id="card-042" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1029,14 +988,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 042 · classic · hard</div>
-        <h2>Хуёво</h2>
+        <div class="phraseRow"><h2>Хуёво</h2><button class="play" data-audio="assets/audio/042.mp3" data-text="Хуёво" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuyóvo/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Dick-ishly</p></div>
           <div><small>Natural English</small><p>Shitty / bad</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/042.mp3" data-text="Хуёво">▶ Play pronunciation</button>
     </section><section class="card" id="card-043" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1053,14 +1011,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 043 · classic · hard</div>
-        <h2>Нахуячить</h2>
+        <div class="phraseRow"><h2>Нахуячить</h2><button class="play" data-audio="assets/audio/043.mp3" data-text="Нахуячить" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/nakhuyáchit/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>To dick-smash a lot</p></div>
           <div><small>Natural English</small><p>Throw together / make a lot</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/043.mp3" data-text="Нахуячить">▶ Play pronunciation</button>
     </section><section class="card" id="card-044" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1077,14 +1034,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 044 · classic · hard</div>
-        <h2>Захуярить</h2>
+        <div class="phraseRow"><h2>Захуярить</h2><button class="play" data-audio="assets/audio/044.mp3" data-text="Захуярить" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zakhuyárit/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>To dick-blast</p></div>
           <div><small>Natural English</small><p>To make/do forcefully</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/044.mp3" data-text="Захуярить">▶ Play pronunciation</button>
     </section><section class="card" id="card-045" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1101,14 +1057,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 045 · classic · hard</div>
-        <h2>Расхуярить</h2>
+        <div class="phraseRow"><h2>Расхуярить</h2><button class="play" data-audio="assets/audio/045.mp3" data-text="Расхуярить" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/raskhuyárit/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>To dick-smash apart</p></div>
           <div><small>Natural English</small><p>Smash to pieces</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/045.mp3" data-text="Расхуярить">▶ Play pronunciation</button>
     </section><section class="card" id="card-046" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1125,14 +1080,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 046 · insult · hard</div>
-        <h2>Прихуел?</h2>
+        <div class="phraseRow"><h2>Прихуел?</h2><button class="play" data-audio="assets/audio/046.mp3" data-text="Прихуел?" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/prikhuyél/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Have you become dickstruck?</p></div>
           <div><small>Natural English</small><p>Are you out of your mind?</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/046.mp3" data-text="Прихуел?">▶ Play pronunciation</button>
     </section><section class="card" id="card-047" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1149,14 +1103,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 047 · insult · hard</div>
-        <h2>Охуел совсем?</h2>
+        <div class="phraseRow"><h2>Охуел совсем?</h2><button class="play" data-audio="assets/audio/047.mp3" data-text="Охуел совсем?" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/okhuyél sovsém/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Totally dickstruck?</p></div>
           <div><small>Natural English</small><p>Have you completely lost it?</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/047.mp3" data-text="Охуел совсем?">▶ Play pronunciation</button>
     </section><section class="card" id="card-048" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1173,14 +1126,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 048 · classic · hard</div>
-        <h2>Ебануться можно</h2>
+        <div class="phraseRow"><h2>Ебануться можно</h2><button class="play" data-audio="assets/audio/048.mp3" data-text="Ебануться можно" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebánutsya mózhno/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>One could fuck oneself</p></div>
           <div><small>Natural English</small><p>This is insane</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/048.mp3" data-text="Ебануться можно">▶ Play pronunciation</button>
     </section><section class="card" id="card-049" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1197,14 +1149,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 049 · insult · hard</div>
-        <h2>Ты ебанулся?</h2>
+        <div class="phraseRow"><h2>Ты ебанулся?</h2><button class="play" data-audio="assets/audio/049.mp3" data-text="Ты ебанулся?" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ty yebánulsya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Did you fuck yourself?</p></div>
           <div><small>Natural English</small><p>Are you crazy?</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/049.mp3" data-text="Ты ебанулся?">▶ Play pronunciation</button>
     </section><section class="card" id="card-050" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1221,14 +1172,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 050 · absurd · hard</div>
-        <h2>Ебать ты гений</h2>
+        <div class="phraseRow"><h2>Ебать ты гений</h2><button class="play" data-audio="assets/audio/050.mp3" data-text="Ебать ты гений" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebát ty géniy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck, you’re a genius</p></div>
           <div><small>Natural English</small><p>You absolute genius / idiot, context decides</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/050.mp3" data-text="Ебать ты гений">▶ Play pronunciation</button>
     </section><section class="card" id="card-051" data-cat="idiom" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1245,14 +1195,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 051 · idiom · soft</div>
-        <h2>Крыша поехала</h2>
+        <div class="phraseRow"><h2>Крыша поехала</h2><button class="play" data-audio="assets/audio/051.mp3" data-text="Крыша поехала" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/krýsha poyékhala/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>The roof drove away</p></div>
           <div><small>Natural English</small><p>Lost one’s mind</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/051.mp3" data-text="Крыша поехала">▶ Play pronunciation</button>
     </section><section class="card" id="card-052" data-cat="idiom" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1269,14 +1218,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 052 · idiom · soft</div>
-        <h2>Башню снесло</h2>
+        <div class="phraseRow"><h2>Башню снесло</h2><button class="play" data-audio="assets/audio/052.mp3" data-text="Башню снесло" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/báshnyu snesló/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>The tower got blown off</p></div>
           <div><small>Natural English</small><p>Lost it completely</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/052.mp3" data-text="Башню снесло">▶ Play pronunciation</button>
     </section><section class="card" id="card-053" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1293,14 +1241,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 053 · idiom · hard</div>
-        <h2>Мозги ебут</h2>
+        <div class="phraseRow"><h2>Мозги ебут</h2><button class="play" data-audio="assets/audio/053.mp3" data-text="Мозги ебут" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/mozgí yebút/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>They fuck the brains</p></div>
           <div><small>Natural English</small><p>They’re messing with my head</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/053.mp3" data-text="Мозги ебут">▶ Play pronunciation</button>
     </section><section class="card" id="card-054" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1317,14 +1264,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 054 · insult · hard</div>
-        <h2>Не еби мне мозги</h2>
+        <div class="phraseRow"><h2>Не еби мне мозги</h2><button class="play" data-audio="assets/audio/054.mp3" data-text="Не еби мне мозги" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ne yebí mne mozgí/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Don’t fuck my brains</p></div>
           <div><small>Natural English</small><p>Don’t mess with my head</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/054.mp3" data-text="Не еби мне мозги">▶ Play pronunciation</button>
     </section><section class="card" id="card-055" data-cat="absurd" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1341,14 +1287,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 055 · absurd · medium</div>
-        <h2>Ебучий театр</h2>
+        <div class="phraseRow"><h2>Ебучий театр</h2><button class="play" data-audio="assets/audio/055.mp3" data-text="Ебучий театр" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebúchiy teátr/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucking theater</p></div>
           <div><small>Natural English</small><p>What a ridiculous drama</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/055.mp3" data-text="Ебучий театр">▶ Play pronunciation</button>
     </section><section class="card" id="card-056" data-cat="idiom" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1365,14 +1310,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 056 · idiom · soft</div>
-        <h2>Цирк с конями</h2>
+        <div class="phraseRow"><h2>Цирк с конями</h2><button class="play" data-audio="assets/audio/056.mp3" data-text="Цирк с конями" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/tsirk s konyámi/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Circus with horses</p></div>
           <div><small>Natural English</small><p>Total clown show</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/056.mp3" data-text="Цирк с конями">▶ Play pronunciation</button>
     </section><section class="card" id="card-057" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1389,14 +1333,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 057 · absurd · hard</div>
-        <h2>Пиздострадания</h2>
+        <div class="phraseRow"><h2>Пиздострадания</h2><button class="play" data-audio="assets/audio/057.mp3" data-text="Пиздострадания" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdostradániya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Cunt-sufferings</p></div>
           <div><small>Natural English</small><p>Pointless melodrama</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/057.mp3" data-text="Пиздострадания">▶ Play pronunciation</button>
     </section><section class="card" id="card-058" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1413,14 +1356,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 058 · absurd · hard</div>
-        <h2>Хуеплётство</h2>
+        <div class="phraseRow"><h2>Хуеплётство</h2><button class="play" data-audio="assets/audio/058.mp3" data-text="Хуеплётство" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuyeplótstvo/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Dick-weaving</p></div>
           <div><small>Natural English</small><p>Bullshitting / nonsense-making</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/058.mp3" data-text="Хуеплётство">▶ Play pronunciation</button>
     </section><section class="card" id="card-059" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1437,14 +1379,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 059 · absurd · hard</div>
-        <h2>Пиздобратия</h2>
+        <div class="phraseRow"><h2>Пиздобратия</h2><button class="play" data-audio="assets/audio/059.mp3" data-text="Пиздобратия" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdobrátiya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Cunt-brotherhood</p></div>
           <div><small>Natural English</small><p>A shady gang / bunch</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/059.mp3" data-text="Пиздобратия">▶ Play pronunciation</button>
     </section><section class="card" id="card-060" data-cat="absurd" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1461,14 +1402,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 060 · absurd · medium</div>
-        <h2>Ебучий компот</h2>
+        <div class="phraseRow"><h2>Ебучий компот</h2><button class="play" data-audio="assets/audio/060.mp3" data-text="Ебучий компот" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebúchiy kompót/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucking compote</p></div>
           <div><small>Natural English</small><p>A ridiculous mess</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/060.mp3" data-text="Ебучий компот">▶ Play pronunciation</button>
     </section><section class="card" id="card-061" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1485,14 +1425,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 061 · absurd · hard</div>
-        <h2>Пизда рулю</h2>
+        <div class="phraseRow"><h2>Пизда рулю</h2><button class="play" data-audio="assets/audio/061.mp3" data-text="Пизда рулю" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdá rulyú/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Cunt to the steering wheel</p></div>
           <div><small>Natural English</small><p>The steering/control is fucked</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/061.mp3" data-text="Пизда рулю">▶ Play pronunciation</button>
     </section><section class="card" id="card-062" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1509,14 +1448,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 062 · absurd · hard</div>
-        <h2>Хуй на блюде</h2>
+        <div class="phraseRow"><h2>Хуй на блюде</h2><button class="play" data-audio="assets/audio/062.mp3" data-text="Хуй на блюде" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuy na blyúde/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>A dick on a plate</p></div>
           <div><small>Natural English</small><p>A useless offer / insult gift</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/062.mp3" data-text="Хуй на блюде">▶ Play pronunciation</button>
     </section><section class="card" id="card-063" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1533,14 +1471,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 063 · idiom · medium</div>
-        <h2>Жопой чую</h2>
+        <div class="phraseRow"><h2>Жопой чую</h2><button class="play" data-audio="assets/audio/063.mp3" data-text="Жопой чую" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zhópoy chúyu/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>I sense it with my ass</p></div>
           <div><small>Natural English</small><p>I have a gut feeling</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/063.mp3" data-text="Жопой чую">▶ Play pronunciation</button>
     </section><section class="card" id="card-064" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1557,14 +1494,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 064 · idiom · medium</div>
-        <h2>Сидим в жопе</h2>
+        <div class="phraseRow"><h2>Сидим в жопе</h2><button class="play" data-audio="assets/audio/064.mp3" data-text="Сидим в жопе" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/sidím v zhópe/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>We sit in the ass</p></div>
           <div><small>Natural English</small><p>We’re in deep trouble</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/064.mp3" data-text="Сидим в жопе">▶ Play pronunciation</button>
     </section><section class="card" id="card-065" data-cat="idiom" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1581,14 +1517,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 065 · idiom · soft</div>
-        <h2>Вляпались по уши</h2>
+        <div class="phraseRow"><h2>Вляпались по уши</h2><button class="play" data-audio="assets/audio/065.mp3" data-text="Вляпались по уши" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/vlyápalis po úshi/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Got smeared up to ears</p></div>
           <div><small>Natural English</small><p>We’re in it deep</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/065.mp3" data-text="Вляпались по уши">▶ Play pronunciation</button>
     </section><section class="card" id="card-066" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1605,14 +1540,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 066 · idiom · hard</div>
-        <h2>Насрали в душу</h2>
+        <div class="phraseRow"><h2>Насрали в душу</h2><button class="play" data-audio="assets/audio/066.mp3" data-text="Насрали в душу" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/nasráli v dúshu/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Shat into the soul</p></div>
           <div><small>Natural English</small><p>Deeply betrayed / hurt</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/066.mp3" data-text="Насрали в душу">▶ Play pronunciation</button>
     </section><section class="card" id="card-067" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1629,14 +1563,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 067 · insult · hard</div>
-        <h2>Душнила ебаная</h2>
+        <div class="phraseRow"><h2>Душнила ебаная</h2><button class="play" data-audio="assets/audio/067.mp3" data-text="Душнила ебаная" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/dushníla yebánaya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucking suffocator</p></div>
           <div><small>Natural English</small><p>Insufferable bore</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/067.mp3" data-text="Душнила ебаная">▶ Play pronunciation</button>
     </section><section class="card" id="card-068" data-cat="insult" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1653,14 +1586,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 068 · insult · medium</div>
-        <h2>Мудак</h2>
+        <div class="phraseRow"><h2>Мудак</h2><button class="play" data-audio="assets/audio/068.mp3" data-text="Мудак" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/mudák/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Ballbag</p></div>
           <div><small>Natural English</small><p>Asshole</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/068.mp3" data-text="Мудак">▶ Play pronunciation</button>
     </section><section class="card" id="card-069" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1677,14 +1609,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 069 · insult · hard</div>
-        <h2>Конченый мудак</h2>
+        <div class="phraseRow"><h2>Конченый мудак</h2><button class="play" data-audio="assets/audio/069.mp3" data-text="Конченый мудак" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/kónchenyy mudák/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Finished asshole</p></div>
           <div><small>Natural English</small><p>Total asshole</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/069.mp3" data-text="Конченый мудак">▶ Play pronunciation</button>
     </section><section class="card" id="card-070" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1701,14 +1632,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 070 · insult · hard</div>
-        <h2>Долбоёб</h2>
+        <div class="phraseRow"><h2>Долбоёб</h2><button class="play" data-audio="assets/audio/070.mp3" data-text="Долбоёб" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/dolboyób/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Hammer-fucker</p></div>
           <div><small>Natural English</small><p>Fucking idiot</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/070.mp3" data-text="Долбоёб">▶ Play pronunciation</button>
     </section><section class="card" id="card-071" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1725,14 +1655,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 071 · insult · hard</div>
-        <h2>Еблан</h2>
+        <div class="phraseRow"><h2>Еблан</h2><button class="play" data-audio="assets/audio/071.mp3" data-text="Еблан" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yeblán/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuckhead</p></div>
           <div><small>Natural English</small><p>Dumbass</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/071.mp3" data-text="Еблан">▶ Play pronunciation</button>
     </section><section class="card" id="card-072" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1749,14 +1678,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 072 · insult · hard</div>
-        <h2>Дебил, блядь</h2>
+        <div class="phraseRow"><h2>Дебил, блядь</h2><button class="play" data-audio="assets/audio/072.mp3" data-text="Дебил, блядь" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/debíl blyád/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Idiot, whore/fuck</p></div>
           <div><small>Natural English</small><p>Fucking idiot</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/072.mp3" data-text="Дебил, блядь">▶ Play pronunciation</button>
     </section><section class="card" id="card-073" data-cat="classic" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1773,14 +1701,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 073 · classic · hard</div>
-        <h2>Блядский цирк</h2>
+        <div class="phraseRow"><h2>Блядский цирк</h2><button class="play" data-audio="assets/audio/073.mp3" data-text="Блядский цирк" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/blyádsky tsirk/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Whorish circus</p></div>
           <div><small>Natural English</small><p>Fucking circus</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/073.mp3" data-text="Блядский цирк">▶ Play pronunciation</button>
     </section><section class="card" id="card-074" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1797,14 +1724,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 074 · classic · medium</div>
-        <h2>Блядь, ну как так</h2>
+        <div class="phraseRow"><h2>Блядь, ну как так</h2><button class="play" data-audio="assets/audio/074.mp3" data-text="Блядь, ну как так" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/blyád nu kak tak/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck, how so</p></div>
           <div><small>Natural English</small><p>Fuck, how is this possible</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/074.mp3" data-text="Блядь, ну как так">▶ Play pronunciation</button>
     </section><section class="card" id="card-075" data-cat="classic" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1821,14 +1747,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 075 · classic · medium</div>
-        <h2>Твою мать</h2>
+        <div class="phraseRow"><h2>Твою мать</h2><button class="play" data-audio="assets/audio/075.mp3" data-text="Твою мать" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/tvoyú mat/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Your mother</p></div>
           <div><small>Natural English</small><p>Damn it</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/075.mp3" data-text="Твою мать">▶ Play pronunciation</button>
     </section><section class="card" id="card-076" data-cat="absurd" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1845,14 +1770,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 076 · absurd · medium</div>
-        <h2>Мать твою за ногу</h2>
+        <div class="phraseRow"><h2>Мать твою за ногу</h2><button class="play" data-audio="assets/audio/076.mp3" data-text="Мать твою за ногу" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/mat tvoyú za nógu/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Your mother by the leg</p></div>
           <div><small>Natural English</small><p>Damn it all</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/076.mp3" data-text="Мать твою за ногу">▶ Play pronunciation</button>
     </section><section class="card" id="card-077" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1869,14 +1793,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 077 · absurd · hard</div>
-        <h2>Ёбаный насос</h2>
+        <div class="phraseRow"><h2>Ёбаный насос</h2><button class="play" data-audio="assets/audio/077.mp3" data-text="Ёбаный насос" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yóbany nasós/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucking pump</p></div>
           <div><small>Natural English</small><p>For fuck’s sake</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/077.mp3" data-text="Ёбаный насос">▶ Play pronunciation</button>
     </section><section class="card" id="card-078" data-cat="classic" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1893,14 +1816,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 078 · classic · soft</div>
-        <h2>Ёкарный бабай</h2>
+        <div class="phraseRow"><h2>Ёкарный бабай</h2><button class="play" data-audio="assets/audio/078.mp3" data-text="Ёкарный бабай" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yókarnyy babáy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Yokarny bogeyman</p></div>
           <div><small>Natural English</small><p>Jeez / dang</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/078.mp3" data-text="Ёкарный бабай">▶ Play pronunciation</button>
     </section><section class="card" id="card-079" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1917,14 +1839,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 079 · insult · hard</div>
-        <h2>Пиздюк мелкий</h2>
+        <div class="phraseRow"><h2>Пиздюк мелкий</h2><button class="play" data-audio="assets/audio/079.mp3" data-text="Пиздюк мелкий" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdyúk mélkiy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Little cuntling</p></div>
           <div><small>Natural English</small><p>Little brat</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/079.mp3" data-text="Пиздюк мелкий">▶ Play pronunciation</button>
     </section><section class="card" id="card-080" data-cat="insult" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1941,14 +1862,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 080 · insult · medium</div>
-        <h2>Сучий потрох</h2>
+        <div class="phraseRow"><h2>Сучий потрох</h2><button class="play" data-audio="assets/audio/080.mp3" data-text="Сучий потрох" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/súchiy potrókh/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Bitch innard</p></div>
           <div><small>Natural English</small><p>Bastard / nasty type</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/080.mp3" data-text="Сучий потрох">▶ Play pronunciation</button>
     </section><section class="card" id="card-081" data-cat="insult" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1965,14 +1885,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 081 · insult · medium</div>
-        <h2>Сука ты крашеная</h2>
+        <div class="phraseRow"><h2>Сука ты крашеная</h2><button class="play" data-audio="assets/audio/081.mp3" data-text="Сука ты крашеная" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/súka ty kráshenaya/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>You painted bitch</p></div>
           <div><small>Natural English</small><p>You fake bastard</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/081.mp3" data-text="Сука ты крашеная">▶ Play pronunciation</button>
     </section><section class="card" id="card-082" data-cat="absurd" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -1989,14 +1908,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 082 · absurd · soft</div>
-        <h2>Хрен моржовый</h2>
+        <div class="phraseRow"><h2>Хрен моржовый</h2><button class="play" data-audio="assets/audio/082.mp3" data-text="Хрен моржовый" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khren morzhóvyy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Walrus horseradish</p></div>
           <div><small>Natural English</small><p>Silly jerk</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/082.mp3" data-text="Хрен моржовый">▶ Play pronunciation</button>
     </section><section class="card" id="card-083" data-cat="insult" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2013,14 +1931,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 083 · insult · soft</div>
-        <h2>Пень еловый</h2>
+        <div class="phraseRow"><h2>Пень еловый</h2><button class="play" data-audio="assets/audio/083.mp3" data-text="Пень еловый" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pen yelóvyy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Spruce stump</p></div>
           <div><small>Natural English</small><p>Blockhead</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/083.mp3" data-text="Пень еловый">▶ Play pronunciation</button>
     </section><section class="card" id="card-084" data-cat="insult" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2037,14 +1954,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 084 · insult · soft</div>
-        <h2>Иди лесом</h2>
+        <div class="phraseRow"><h2>Иди лесом</h2><button class="play" data-audio="assets/audio/084.mp3" data-text="Иди лесом" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/idí lésom/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Go by the forest</p></div>
           <div><small>Natural English</small><p>Get lost</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/084.mp3" data-text="Иди лесом">▶ Play pronunciation</button>
     </section><section class="card" id="card-085" data-cat="absurd" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2061,14 +1977,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 085 · absurd · soft</div>
-        <h2>Катись колбаской</h2>
+        <div class="phraseRow"><h2>Катись колбаской</h2><button class="play" data-audio="assets/audio/085.mp3" data-text="Катись колбаской" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/katís kolbáskoy/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Roll away like sausage</p></div>
           <div><small>Natural English</small><p>Go away, silly</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/085.mp3" data-text="Катись колбаской">▶ Play pronunciation</button>
     </section><section class="card" id="card-086" data-cat="insult" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2085,14 +2000,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 086 · insult · soft</div>
-        <h2>Отвали</h2>
+        <div class="phraseRow"><h2>Отвали</h2><button class="play" data-audio="assets/audio/086.mp3" data-text="Отвали" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/otvalí/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fall off</p></div>
           <div><small>Natural English</small><p>Back off</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/086.mp3" data-text="Отвали">▶ Play pronunciation</button>
     </section><section class="card" id="card-087" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2109,14 +2023,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 087 · insult · hard</div>
-        <h2>Съебался отсюда</h2>
+        <div class="phraseRow"><h2>Съебался отсюда</h2><button class="play" data-audio="assets/audio/087.mp3" data-text="Съебался отсюда" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/syebálsya otsyúda/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fucked off from here</p></div>
           <div><small>Natural English</small><p>Got the fuck out of here</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/087.mp3" data-text="Съебался отсюда">▶ Play pronunciation</button>
     </section><section class="card" id="card-088" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2133,14 +2046,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 088 · insult · hard</div>
-        <h2>Съеби в туман</h2>
+        <div class="phraseRow"><h2>Съеби в туман</h2><button class="play" data-audio="assets/audio/088.mp3" data-text="Съеби в туман" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/syebí v tumán/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck off into fog</p></div>
           <div><small>Natural English</small><p>Disappear / get lost</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/088.mp3" data-text="Съеби в туман">▶ Play pronunciation</button>
     </section><section class="card" id="card-089" data-cat="insult" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2157,14 +2069,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 089 · insult · soft</div>
-        <h2>Пшёл вон</h2>
+        <div class="phraseRow"><h2>Пшёл вон</h2><button class="play" data-audio="assets/audio/089.mp3" data-text="Пшёл вон" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pshyól von/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Go out</p></div>
           <div><small>Natural English</small><p>Get out</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/089.mp3" data-text="Пшёл вон">▶ Play pronunciation</button>
     </section><section class="card" id="card-090" data-cat="insult" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2181,14 +2092,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 090 · insult · medium</div>
-        <h2>Закрой хлебало</h2>
+        <div class="phraseRow"><h2>Закрой хлебало</h2><button class="play" data-audio="assets/audio/090.mp3" data-text="Закрой хлебало" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zakróy khlebálo/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Close your bread-hole</p></div>
           <div><small>Natural English</small><p>Shut your mouth</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/090.mp3" data-text="Закрой хлебало">▶ Play pronunciation</button>
     </section><section class="card" id="card-091" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2205,14 +2115,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 091 · insult · hard</div>
-        <h2>Завали ебало</h2>
+        <div class="phraseRow"><h2>Завали ебало</h2><button class="play" data-audio="assets/audio/091.mp3" data-text="Завали ебало" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/zavalí yebálo/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Block your fuck-face</p></div>
           <div><small>Natural English</small><p>Shut the fuck up</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/091.mp3" data-text="Завали ебало">▶ Play pronunciation</button>
     </section><section class="card" id="card-092" data-cat="insult" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2229,14 +2138,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 092 · insult · hard</div>
-        <h2>Не пизди</h2>
+        <div class="phraseRow"><h2>Не пизди</h2><button class="play" data-audio="assets/audio/092.mp3" data-text="Не пизди" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/ne pizdí/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Don’t cunt-talk</p></div>
           <div><small>Natural English</small><p>Don’t lie / shut up</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/092.mp3" data-text="Не пизди">▶ Play pronunciation</button>
     </section><section class="card" id="card-093" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2253,14 +2161,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 093 · idiom · hard</div>
-        <h2>Пиздеть не мешки ворочать</h2>
+        <div class="phraseRow"><h2>Пиздеть не мешки ворочать</h2><button class="play" data-audio="assets/audio/093.mp3" data-text="Пиздеть не мешки ворочать" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdét ne meshkí vorochát/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Talking shit isn’t moving sacks</p></div>
           <div><small>Natural English</small><p>Talk is cheap</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/093.mp3" data-text="Пиздеть не мешки ворочать">▶ Play pronunciation</button>
     </section><section class="card" id="card-094" data-cat="idiom" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2277,14 +2184,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 094 · idiom · medium</div>
-        <h2>Хуй с горы</h2>
+        <div class="phraseRow"><h2>Хуй с горы</h2><button class="play" data-audio="assets/audio/094.mp3" data-text="Хуй с горы" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuy s gorý/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Dick from a mountain</p></div>
           <div><small>Natural English</small><p>Some random guy</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/094.mp3" data-text="Хуй с горы">▶ Play pronunciation</button>
     </section><section class="card" id="card-095" data-cat="idiom" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2301,14 +2207,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 095 · idiom · hard</div>
-        <h2>Пиздой накрылось</h2>
+        <div class="phraseRow"><h2>Пиздой накрылось</h2><button class="play" data-audio="assets/audio/095.mp3" data-text="Пиздой накрылось" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdóy nakrýlos/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Covered by cunt</p></div>
           <div><small>Natural English</small><p>It went completely to hell</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/095.mp3" data-text="Пиздой накрылось">▶ Play pronunciation</button>
     </section><section class="card" id="card-096" data-cat="idiom" data-level="soft">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2325,14 +2230,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 096 · idiom · soft</div>
-        <h2>Накрылось медным тазом</h2>
+        <div class="phraseRow"><h2>Накрылось медным тазом</h2><button class="play" data-audio="assets/audio/096.mp3" data-text="Накрылось медным тазом" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/nakrýlos médnym tazóm/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Covered by a copper basin</p></div>
           <div><small>Natural English</small><p>It failed / collapsed</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/096.mp3" data-text="Накрылось медным тазом">▶ Play pronunciation</button>
     </section><section class="card" id="card-097" data-cat="absurd" data-level="medium">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2349,14 +2253,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 097 · absurd · medium</div>
-        <h2>В рот мне ноги</h2>
+        <div class="phraseRow"><h2>В рот мне ноги</h2><button class="play" data-audio="assets/audio/097.mp3" data-text="В рот мне ноги" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/v rot mne nógi/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Feet into my mouth</p></div>
           <div><small>Natural English</small><p>What the actual hell</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/097.mp3" data-text="В рот мне ноги">▶ Play pronunciation</button>
     </section><section class="card" id="card-098" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2373,14 +2276,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 098 · absurd · hard</div>
-        <h2>Ебать мой рот наоборот</h2>
+        <div class="phraseRow"><h2>Ебать мой рот наоборот</h2><button class="play" data-audio="assets/audio/098.mp3" data-text="Ебать мой рот наоборот" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/yebát moy rot naoborót/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Fuck my mouth backwards</p></div>
           <div><small>Natural English</small><p>Absurd shocked swearing</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/098.mp3" data-text="Ебать мой рот наоборот">▶ Play pronunciation</button>
     </section><section class="card" id="card-099" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2397,14 +2299,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 099 · absurd · hard</div>
-        <h2>Хуйня из-под коня</h2>
+        <div class="phraseRow"><h2>Хуйня из-под коня</h2><button class="play" data-audio="assets/audio/099.mp3" data-text="Хуйня из-под коня" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/khuynyá iz-pod konyá/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Dick-stuff from under a horse</p></div>
           <div><small>Natural English</small><p>Utter rubbish</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/099.mp3" data-text="Хуйня из-под коня">▶ Play pronunciation</button>
     </section><section class="card" id="card-100" data-cat="absurd" data-level="hard">
       <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
@@ -2421,14 +2322,13 @@
     </svg></div>
       <div class="copy">
         <div class="kicker">Lesson 100 · absurd · hard</div>
-        <h2>Пизда на лыжах</h2>
+        <div class="phraseRow"><h2>Пизда на лыжах</h2><button class="play" data-audio="assets/audio/100.mp3" data-text="Пизда на лыжах" aria-label="Play pronunciation"></button></div>
         <div class="transcription">/pizdá na lýzhakh/</div>
         <div class="grid">
           <div><small>Literal translation</small><p>Cunt on skis</p></div>
           <div><small>Natural English</small><p>Ridiculous person/situation</p></div>
         </div>
       </div>
-      <button class="play" data-audio="assets/audio/100.mp3" data-text="Пизда на лыжах">▶ Play pronunciation</button>
     </section>
   <section class="footer"><div><h2>Вот и всё.</h2><p class="hint">End of demo. You are now legally more dangerous in Russian.</p></div></section>
   <div class="toast" id="toast">Playing Russian chaos…</div>
