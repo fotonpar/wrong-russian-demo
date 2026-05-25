@@ -12,7 +12,7 @@
     .three{display:grid;gap:3px;transform:skew(-17deg)} .three i{display:block;width:9px;height:34px;background:#fff}
     .hero,.card{min-height:100svh;scroll-snap-align:start;position:relative;padding:78px 18px max(72px,calc(56px + env(safe-area-inset-bottom)));display:flex;flex-direction:column;justify-content:flex-start;gap:12px;overflow:hidden;background:#000;border-bottom:1px solid #111}
     .hero h1{font-size:clamp(58px,18vw,104px);line-height:.78;letter-spacing:-.095em;margin:0;text-transform:uppercase} .hero p{font-size:18px;line-height:1.25;color:#d8d8d8;max-width:390px} .hero .big{font-size:22px;color:#fff;font-weight:900} .heroArt{height:42vh;min-height:280px;border:2px solid #fff;border-radius:34px;display:grid;place-items:center;position:relative;overflow:hidden;background:#050505;box-shadow:inset 0 0 0 8px #000,inset 0 0 0 10px #fff} .heroArt:before{content:"";position:absolute;inset:-30px;background:repeating-linear-gradient(105deg,transparent 0 18px,#fff 19px 25px,transparent 26px 54px);opacity:.16} .heroArt b{font-size:88px;z-index:1;filter:grayscale(1)}
-    .stripes{position:absolute;right:14px;top:86px;display:flex;gap:7px;transform:skew(-17deg);opacity:.95} .stripes i{width:17px;height:132px;background:#fff;display:block}
+    .stripes{display:none}
     .topline{display:flex;align-items:center;font-size:12px;font-weight:1000;letter-spacing:.12em;color:#aaa} .topline b{margin-left:auto;color:#000;background:#fff;border-radius:999px;padding:6px 9px;letter-spacing:0}
     .visual{display:grid;place-items:center;margin-top:8px;flex:0 1 38svh;min-height:235px;border:2px solid #fff;border-radius:28px;background:radial-gradient(circle at 50% 35%,#171717,#000 62%);box-shadow:inset 0 0 0 8px #000,inset 0 0 0 10px #fff;position:relative;overflow:hidden}.visual:before{content:"WRONG • RUSSIAN • WRONG • RUSSIAN • WRONG • RUSSIAN";position:absolute;top:12px;left:18px;right:18px;text-align:center;font-family:Georgia,serif;font-weight:900;font-size:10px;letter-spacing:.22em;color:#fff;opacity:.62}.visual:after{content:"☠︎ ✦ ☠︎";position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:18px;color:#fff;opacity:.65} .art{width:min(88vw,405px);height:auto;filter:drop-shadow(0 20px 40px rgba(255,255,255,.08))}.art text{font-family:Impact,'Arial Black',sans-serif}.caption-ribbon{font-family:Georgia,serif;font-weight:900;letter-spacing:.08em}
     .copy{padding-bottom:12px;position:relative;z-index:2} .kicker{font-size:12px;text-transform:uppercase;color:#9b9b9b;font-weight:900;letter-spacing:.11em;margin-bottom:8px} .phraseRow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;margin-bottom:10px}h2{font-family:Impact,'Arial Black',Inter,sans-serif;font-size:clamp(34px,10.8vw,62px);line-height:.82;letter-spacing:-.055em;margin:0;text-transform:uppercase;text-shadow:2px 2px 0 #000,-1px -1px 0 #000} .transcription{font-size:16px;color:#ddd;font-weight:800;margin-bottom:10px}
@@ -30,7 +30,6 @@
     <div><h1>Wrong<br>Russian</h1><p class="big">Learn Russian in a very wrong way.</p><p>Fullscreen flashcards for English speakers: cursed Russian phrase, pronunciation, literal translation, real meaning, and tap-to-play audio.</p><p class="hint">Swipe down. Wear a helmet. Do not use at dinner with in-laws.</p></div>
   </section>
   <section class="card" id="card-001" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -53,7 +52,6 @@
         </div>
       </div>
     </section><section class="card" id="card-002" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -76,7 +74,6 @@
         </div>
       </div>
     </section><section class="card" id="card-003" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -99,7 +96,6 @@
         </div>
       </div>
     </section><section class="card" id="card-004" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -122,7 +118,6 @@
         </div>
       </div>
     </section><section class="card" id="card-005" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -145,7 +140,6 @@
         </div>
       </div>
     </section><section class="card" id="card-006" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -168,7 +162,6 @@
         </div>
       </div>
     </section><section class="card" id="card-007" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -191,7 +184,6 @@
         </div>
       </div>
     </section><section class="card" id="card-008" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -214,7 +206,6 @@
         </div>
       </div>
     </section><section class="card" id="card-009" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -237,7 +228,6 @@
         </div>
       </div>
     </section><section class="card" id="card-010" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -260,7 +250,6 @@
         </div>
       </div>
     </section><section class="card" id="card-011" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -283,7 +272,6 @@
         </div>
       </div>
     </section><section class="card" id="card-012" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -306,7 +294,6 @@
         </div>
       </div>
     </section><section class="card" id="card-013" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -329,7 +316,6 @@
         </div>
       </div>
     </section><section class="card" id="card-014" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -352,7 +338,6 @@
         </div>
       </div>
     </section><section class="card" id="card-015" data-cat="classic" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -375,7 +360,6 @@
         </div>
       </div>
     </section><section class="card" id="card-016" data-cat="classic" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -398,7 +382,6 @@
         </div>
       </div>
     </section><section class="card" id="card-017" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -421,7 +404,6 @@
         </div>
       </div>
     </section><section class="card" id="card-018" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -444,7 +426,6 @@
         </div>
       </div>
     </section><section class="card" id="card-019" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -467,7 +448,6 @@
         </div>
       </div>
     </section><section class="card" id="card-020" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -490,7 +470,6 @@
         </div>
       </div>
     </section><section class="card" id="card-021" data-cat="insult" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -513,7 +492,6 @@
         </div>
       </div>
     </section><section class="card" id="card-022" data-cat="absurd" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -536,7 +514,6 @@
         </div>
       </div>
     </section><section class="card" id="card-023" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -559,7 +536,6 @@
         </div>
       </div>
     </section><section class="card" id="card-024" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -582,7 +558,6 @@
         </div>
       </div>
     </section><section class="card" id="card-025" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -605,7 +580,6 @@
         </div>
       </div>
     </section><section class="card" id="card-026" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -628,7 +602,6 @@
         </div>
       </div>
     </section><section class="card" id="card-027" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -651,7 +624,6 @@
         </div>
       </div>
     </section><section class="card" id="card-028" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -674,7 +646,6 @@
         </div>
       </div>
     </section><section class="card" id="card-029" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -697,7 +668,6 @@
         </div>
       </div>
     </section><section class="card" id="card-030" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -720,7 +690,6 @@
         </div>
       </div>
     </section><section class="card" id="card-031" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -743,7 +712,6 @@
         </div>
       </div>
     </section><section class="card" id="card-032" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -766,7 +734,6 @@
         </div>
       </div>
     </section><section class="card" id="card-033" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -789,7 +756,6 @@
         </div>
       </div>
     </section><section class="card" id="card-034" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -812,7 +778,6 @@
         </div>
       </div>
     </section><section class="card" id="card-035" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -835,7 +800,6 @@
         </div>
       </div>
     </section><section class="card" id="card-036" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -858,7 +822,6 @@
         </div>
       </div>
     </section><section class="card" id="card-037" data-cat="classic" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -881,7 +844,6 @@
         </div>
       </div>
     </section><section class="card" id="card-038" data-cat="classic" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -904,7 +866,6 @@
         </div>
       </div>
     </section><section class="card" id="card-039" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -927,7 +888,6 @@
         </div>
       </div>
     </section><section class="card" id="card-040" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -950,7 +910,6 @@
         </div>
       </div>
     </section><section class="card" id="card-041" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -973,7 +932,6 @@
         </div>
       </div>
     </section><section class="card" id="card-042" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -996,7 +954,6 @@
         </div>
       </div>
     </section><section class="card" id="card-043" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1019,7 +976,6 @@
         </div>
       </div>
     </section><section class="card" id="card-044" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1042,7 +998,6 @@
         </div>
       </div>
     </section><section class="card" id="card-045" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1065,7 +1020,6 @@
         </div>
       </div>
     </section><section class="card" id="card-046" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1088,7 +1042,6 @@
         </div>
       </div>
     </section><section class="card" id="card-047" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1111,7 +1064,6 @@
         </div>
       </div>
     </section><section class="card" id="card-048" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1134,7 +1086,6 @@
         </div>
       </div>
     </section><section class="card" id="card-049" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1157,7 +1108,6 @@
         </div>
       </div>
     </section><section class="card" id="card-050" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1180,7 +1130,6 @@
         </div>
       </div>
     </section><section class="card" id="card-051" data-cat="idiom" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1203,7 +1152,6 @@
         </div>
       </div>
     </section><section class="card" id="card-052" data-cat="idiom" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1226,7 +1174,6 @@
         </div>
       </div>
     </section><section class="card" id="card-053" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1249,7 +1196,6 @@
         </div>
       </div>
     </section><section class="card" id="card-054" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1272,7 +1218,6 @@
         </div>
       </div>
     </section><section class="card" id="card-055" data-cat="absurd" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1295,7 +1240,6 @@
         </div>
       </div>
     </section><section class="card" id="card-056" data-cat="idiom" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1318,7 +1262,6 @@
         </div>
       </div>
     </section><section class="card" id="card-057" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1341,7 +1284,6 @@
         </div>
       </div>
     </section><section class="card" id="card-058" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1364,7 +1306,6 @@
         </div>
       </div>
     </section><section class="card" id="card-059" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1387,7 +1328,6 @@
         </div>
       </div>
     </section><section class="card" id="card-060" data-cat="absurd" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1410,7 +1350,6 @@
         </div>
       </div>
     </section><section class="card" id="card-061" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1433,7 +1372,6 @@
         </div>
       </div>
     </section><section class="card" id="card-062" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1456,7 +1394,6 @@
         </div>
       </div>
     </section><section class="card" id="card-063" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1479,7 +1416,6 @@
         </div>
       </div>
     </section><section class="card" id="card-064" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1502,7 +1438,6 @@
         </div>
       </div>
     </section><section class="card" id="card-065" data-cat="idiom" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1525,7 +1460,6 @@
         </div>
       </div>
     </section><section class="card" id="card-066" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1548,7 +1482,6 @@
         </div>
       </div>
     </section><section class="card" id="card-067" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1571,7 +1504,6 @@
         </div>
       </div>
     </section><section class="card" id="card-068" data-cat="insult" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1594,7 +1526,6 @@
         </div>
       </div>
     </section><section class="card" id="card-069" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1617,7 +1548,6 @@
         </div>
       </div>
     </section><section class="card" id="card-070" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1640,7 +1570,6 @@
         </div>
       </div>
     </section><section class="card" id="card-071" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1663,7 +1592,6 @@
         </div>
       </div>
     </section><section class="card" id="card-072" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1686,7 +1614,6 @@
         </div>
       </div>
     </section><section class="card" id="card-073" data-cat="classic" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1709,7 +1636,6 @@
         </div>
       </div>
     </section><section class="card" id="card-074" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1732,7 +1658,6 @@
         </div>
       </div>
     </section><section class="card" id="card-075" data-cat="classic" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1755,7 +1680,6 @@
         </div>
       </div>
     </section><section class="card" id="card-076" data-cat="absurd" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1778,7 +1702,6 @@
         </div>
       </div>
     </section><section class="card" id="card-077" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1801,7 +1724,6 @@
         </div>
       </div>
     </section><section class="card" id="card-078" data-cat="classic" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1824,7 +1746,6 @@
         </div>
       </div>
     </section><section class="card" id="card-079" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1847,7 +1768,6 @@
         </div>
       </div>
     </section><section class="card" id="card-080" data-cat="insult" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1870,7 +1790,6 @@
         </div>
       </div>
     </section><section class="card" id="card-081" data-cat="insult" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1893,7 +1812,6 @@
         </div>
       </div>
     </section><section class="card" id="card-082" data-cat="absurd" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1916,7 +1834,6 @@
         </div>
       </div>
     </section><section class="card" id="card-083" data-cat="insult" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1939,7 +1856,6 @@
         </div>
       </div>
     </section><section class="card" id="card-084" data-cat="insult" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1962,7 +1878,6 @@
         </div>
       </div>
     </section><section class="card" id="card-085" data-cat="absurd" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -1985,7 +1900,6 @@
         </div>
       </div>
     </section><section class="card" id="card-086" data-cat="insult" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2008,7 +1922,6 @@
         </div>
       </div>
     </section><section class="card" id="card-087" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2031,7 +1944,6 @@
         </div>
       </div>
     </section><section class="card" id="card-088" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2054,7 +1966,6 @@
         </div>
       </div>
     </section><section class="card" id="card-089" data-cat="insult" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2077,7 +1988,6 @@
         </div>
       </div>
     </section><section class="card" id="card-090" data-cat="insult" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2100,7 +2010,6 @@
         </div>
       </div>
     </section><section class="card" id="card-091" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2123,7 +2032,6 @@
         </div>
       </div>
     </section><section class="card" id="card-092" data-cat="insult" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2146,7 +2054,6 @@
         </div>
       </div>
     </section><section class="card" id="card-093" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2169,7 +2076,6 @@
         </div>
       </div>
     </section><section class="card" id="card-094" data-cat="idiom" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2192,7 +2098,6 @@
         </div>
       </div>
     </section><section class="card" id="card-095" data-cat="idiom" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2215,7 +2120,6 @@
         </div>
       </div>
     </section><section class="card" id="card-096" data-cat="idiom" data-level="soft">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2238,7 +2142,6 @@
         </div>
       </div>
     </section><section class="card" id="card-097" data-cat="absurd" data-level="medium">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2261,7 +2164,6 @@
         </div>
       </div>
     </section><section class="card" id="card-098" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2284,7 +2186,6 @@
         </div>
       </div>
     </section><section class="card" id="card-099" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
@@ -2307,7 +2208,6 @@
         </div>
       </div>
     </section><section class="card" id="card-100" data-cat="absurd" data-level="hard">
-      <div class="stripes"><i></i><i></i><i></i></div>
       <div class="topline"><span>WRONG RUSSIAN</span><b>18+</b></div>
       <div class="visual"><svg class="art" viewBox="0 0 360 300" aria-hidden="true">
       <rect x="14" y="14" width="332" height="272" rx="22" fill="none" stroke="white" stroke-width="5"/>
